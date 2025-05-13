@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- import poppins font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<!-- font-awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<!-- swipper slider -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<!-- AOS For animation -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="menu-profile">
+
+            <!-- header -->
+            <header>
+                <nav>
+                    <!-- dark light button -->
+
+                    <button class="dark-light-btn bg-gredient">
+                        <i class="fa-regular fa-sun" id="sun"></i>
+                    </button>
+
+                    <!-- menu -->
+                    <ul>
+                        <!-- about -->
+                        <li><a href="#about-us" data-label="About" class="active">
+                            <i class="fa-solid fa-address-book"></i>
+                        </a></li>
+
+                         <!-- skill -->
+                         <li><a href="#skills" data-label="Skills">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </a></li>
+
+                         <!-- services -->
+                         <li><a href="#services" data-label="Services">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </a></li>
+
+                         <!-- pricing -->
+                         <li><a href="#pricing" data-label="Pricing">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                        </a></li>
+
+                         <!-- briefcase -->
+                         <li><a href="#projects" data-label="Projects">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </a></li>
+
+                         <!-- education and work resume -->
+                         <li><a href="#edu-work" data-label="Resume">
+                            <i class="fa-solid fa-file"></i>
+                        </a></li>
+
+                         <!-- clients -->
+                         <li><a href="#Testimonials" data-label="Testimonials">
+                            <i class="fa-solid fa-comment-dots"></i>
+                        </a></li>
+
+                        <!-- contact -->
+                        <li><a href="#contact" data-label="Contact">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </a></li>
+
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- profile -->
+
+            <div class="profile-container">
+                <div class="user-profile bg-gredient">
+                    <div class="user-profile-container">
+
+                        <!-- img -->
+                        <div class="user-profile-img">
+                            <img src="images/logo.png" alt="profile">
+                        </div>
+                        <!-- text -->
+                        <div class="user-profile-text">
+                            <span>Designer and Developer</span>
+                            <h1>Arifa Batool</h1>
+
+                            <!-- social -->
+                            <div class="profile-social-container">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fa-brands fa-github"></i></a>
+                                <a href="#"><svg class="fiverr-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="30" height="30">
+                                    <title>Fiverr</title>
+                                    <path fill= "#E0E0E0" d="M23.004 15.588a.995.995 0 1 0 .002-1.99.995.995 0 0 0-.002 1.99zm-.996-3.705h-.85c-.546 0-.84.41-.84 1.092v2.466h-1.61v-3.558h-.684c-.547 0-.84.41-.84 1.092v2.466h-1.61v-4.874h1.61v.74c.264-.574.626-.74 1.163-.74h1.972v.74c.264-.574.625-.74 1.162-.74h.527v1.316zm-6.786 1.501h-3.359c.088.546.43.858 1.006.858.43 0 .732-.175.83-.487l1.425.4c-.351.848-1.22 1.364-2.255 1.364-1.748 0-2.549-1.355-2.549-2.515 0-1.14.703-2.505 2.45-2.505 1.856 0 2.471 1.384 2.471 2.408 0 .224-.01.37-.02.477zm-1.562-.945c-.04-.42-.342-.81-.889-.81-.508 0-.81.225-.908.81h1.797zM7.508 15.44h1.416l1.767-4.874h-1.62l-.86 2.837-.878-2.837H5.72l1.787 4.874zm-6.6 0H2.51v-3.558h1.524v3.558h1.591v-4.874H2.51v-.302c0-.332.235-.536.606-.536h.918V8.412H2.85c-1.162 0-1.943.712-1.943 1.755v.4H0v1.316h.908v3.558z"/>
+                                  </svg></a>
+                            </div>
+                        </div>
+                    </div>
+
+                       <!-- btns -->
+                       <div class="user-profile-btns">
+                        <a href="assets/Resume.pdf" target="_blank">Download CV</a>
+                        <a href="#">Contact Me</a>
+                     </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- all content -->
+        <div class="all-content">
+
+            <!-- about us -->
+            <section id="about-us" class="section-container">
+                <h3>Hello, I'm <span id="role">Designer and Developer</span></h3>
+                <h1>Frontend Specialist & UI/UX Innovator for the <span>Future</span></h1>
+                <p>As a passionate Frontend Developer, WordPress Developer, UI/UX Designer, and Graphic Designer, I blend creativity with technical expertise to build stunning, user-centered digital solutions. From pixel-perfect websites coded with HTML, CSS, and JavaScript to intuitive WordPress platforms tailored to unique needs, I bring ideas to life with precision and flair. My UI/UX designs prioritize seamless functionality and delightful user journeys, while my graphic design work adds a touch of visual brilliance to every project. Let’s collaborate to create something extraordinary that leaves a lasting impact.</p>
+
+                <!-- project completed number -->
+                
+                <div class="project-container-about">
+
+                    <!-- box -->
+                    <div class="project-container-box">
+                        <span>50+</span>
+                        <strong>Digital Creations</strong>
+                    </div>
+
+                     <!-- box -->
+                     <div class="project-container-box">
+                        <span>4</span>
+                        <strong>Years of Experience</strong>
+                    </div>
+
+                     <!-- box -->
+                     <div class="project-container-box">
+                        <span>100%</span>
+                        <strong>Satisfaction Goal</strong>
+                    </div>
+
+
+                </div>
+            </section>
+
+
+            <!-- skills -->
+            <section id="skills" class="section-container">
+
+                <!-- heading -->
+                <div class="section-heading">
+                    <span class="section-title"><i class="fa-solid fa-layer-group"></i>Technical Skills</span>
+                    <h3>Technologies</h3>
+                </div>
+
+                <!-- container -->
+                <div class="skill-box-container">
+
+                    <!-- javascript -->
+                    <div class="skill-box bg-gredient" data-aos="fade-up">
+                        <div class="skill-box-content">
+                            <i class="fa-brands fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <!-- bar -->
+                        <div class="skill-box-bar">
+                            <span style="width: 80%;"></span>
+                        </div>
+
+                        <!-- percentage -->
+                        <div class="skill-box-percentage">80%</div>
+                    </div>
+
+
+
+
+                       <!-- CSS -->
+                       <div class="skill-box bg-gredient" data-aos="fade-up">
+                        <div class="skill-box-content">
+                            <i class="fa-brands fa-css"></i>
+                            <span>CSS</span>
+                        </div>
+
+                        <!-- bar -->
+                        <div class="skill-box-bar">
+                            <span style="width: 85%;"></span>
+                        </div>
+
+                        <!-- percentage -->
+                        <div class="skill-box-percentage">85%</div>
+                    </div>
+
+
+
+
+
+                       <!-- HTML -->
+                       <div class="skill-box bg-gredient" data-aos="fade-up">
+                        <div class="skill-box-content">
+                            <i class="fa-brands fa-html5"></i>
+                            <span>HTML</span>
+                        </div>
+
+                        <!-- bar -->
+                        <div class="skill-box-bar">
+                            <span style="width: 95%;"></span>
+                        </div>
+
+                        <!-- percentage -->
+                        <div class="skill-box-percentage">95%</div>
+                    </div>
+
+
+
+
+
+                       <!-- WordPress -->
+                       <div class="skill-box bg-gredient" data-aos="fade-up">
+                        <div class="skill-box-content">
+                            <i class="fa-brands fa-wordpress"></i>
+                            <span>WordPress</span>
+                        </div>
+
+                        <!-- bar -->
+                        <div class="skill-box-bar">
+                            <span style="width: 90%;"></span>
+                        </div>
+
+                        <!-- percentage -->
+                        <div class="skill-box-percentage">90%</div>
+                    </div>
+
+
+
+                       <!-- UI/UX Design -->
+                       <div class="skill-box bg-gredient" data-aos="fade-up">
+                        <div class="skill-box-content">
+                            <i class="fa-solid fa-compass-drafting"></i>
+                            <span>UI/UX Design</span>
+                        </div>
+
+                        <!-- bar -->
+                        <div class="skill-box-bar">
+                            <span style="width: 95%;"></span>
+                        </div>
+
+                        <!-- percentage -->
+                        <div class="skill-box-percentage">95%</div>
+                    </div>
+
+
+
+
+                       <!-- Graphic Design -->
+                       <div class="skill-box bg-gredient" data-aos="fade-up">
+                        <div class="skill-box-content">
+                            <i class="fa-solid fa-paintbrush"></i>
+                            <span>Graphic Design</span>
+                        </div>
+
+                        <!-- bar -->
+                        <div class="skill-box-bar">
+                            <span style="width: 85%;"></span>
+                        </div>
+
+                        <!-- percentage -->
+                        <div class="skill-box-percentage">85%</div>
+                    </div>
+
+                </div>
+
+
+                <!-- message -->
+                <p class="service-message">Contact Us For Any Help And Sevices <a href="#">Let's get Started</a></p>
+            </section>
+
+
+            <!-- services -->
+
+            <section id="services" class="section-container">
+                 <!-- heading -->
+                 <div class="section-heading">
+                    <span><i class="fa-solid fa-screwdriver-wrench"></i>Our Services</span>
+                    <h3>What Services I Provide?</h3>
+                </div>
+
+                <!-- container -->
+
+                <div class="service-container">
+                    <!-- front-end-development -->
+                    <div class="service-box bg-gredient" data-aos="fade-up">
+                        <!-- heading -->
+                         <div class="service-box-heading">
+                            <!-- icon -->
+                             <div class="service-box-icon">
+                                <img src="images/icon1.png" alt="front-end-development">
+                             </div>
+                             <!-- text -->
+                              <div class="service-box-heading-text">
+                                <span>Responsive</span>
+                                <strong>Frontend Development</strong>
+                              </div>
+                         </div>
+
+                         <!-- details -->
+                         <p class="service-box-details">Crafting pixel-perfect, interactive websites using HTML, CSS, and JavaScript that engage users across all devices.</p>
+                         <!-- link -->
+                          <a href="#">Get Started</a>
+                    </div>
+
+
+                    <!-- wordpress-development -->
+                    <div class="service-box bg-gredient" data-aos="fade-up">
+                        <!-- heading -->
+                         <div class="service-box-heading">
+                            <!-- icon -->
+                             <div class="service-box-icon">
+                                <img src="images/icon3.png" alt="wordpress-development">
+                             </div>
+                             <!-- text -->
+                              <div class="service-box-heading-text">
+                                <span>Custom</span>
+                                <strong>WordPress Development</strong>
+                              </div>
+                         </div>
+
+                         <!-- details -->
+                         <p class="service-box-details">Building tailored WordPress websites with seamless functionality and easy management for your brand’s success.</p>
+                         <!-- link -->
+                          <a href="#">Get Started</a>
+                    </div>
+
+
+                    <!-- ui/ux designing -->
+                    <div class="service-box bg-gredient" data-aos="fade-up">
+                        <!-- heading -->
+                         <div class="service-box-heading">
+                            <!-- icon -->
+                             <div class="service-box-icon">
+                                <img src="images/icon2.png" alt="ui/ux-designing">
+                             </div>
+                             <!-- text -->
+                              <div class="service-box-heading-text">
+                                <span>Intuitive</span>
+                                <strong>UI/UX Design</strong>
+                              </div>
+                         </div>
+
+                         <!-- details -->
+                         <p class="service-box-details">Designing user-friendly interfaces and seamless experiences that captivate and convert your audience.</p>
+                         <!-- link -->
+                          <a href="#">Get Started</a>
+                    </div>
+
+
+
+                    <!-- graphic-desiging -->
+                    <div class="service-box bg-gredient" data-aos="fade-up">
+                        <!-- heading -->
+                         <div class="service-box-heading">
+                            <!-- icon -->
+                             <div class="service-box-icon">
+                                <img src="images/icon4.png" alt="graphic-desiging">
+                             </div>
+                             <!-- text -->
+                              <div class="service-box-heading-text">
+                                <span>Stunning</span>
+                                <strong>Graphic Design</strong>
+                              </div>
+                         </div>
+
+                         <!-- details -->
+                         <p class="service-box-details">Creating bold visuals, from logos to branding, that elevate your identity with creativity and impact.</p>
+                         <!-- link -->
+                          <a href="#">Get Started</a>
+                    </div>
+                </div>
+
+                <!-- message -->
+                <p class="service-message">Need Help with Your Project? <a href="#">Let’s Collaborate</a></p>
+
+            </section>
+
+
+            <!-- pricing -->
+             <section id="pricing" class="section-container">
+                 <!-- heading -->
+                 <div class="section-heading">
+                    <span><i class="fa-solid fa-dollar-sign"></i>Pricing</span>
+                    <h3>Amazing Pricing For Your Projects</h3>
+                </div>
+
+                <!-- plan-container -->
+                <div class="plan-container">
+                    <!-- basic plan -->
+                     <div class="plan-box bg-gredient" data-aos="fade-up">
+                        <span class="plan-name">Basic</span>
+                        <span class="price">$150</span>
+                        <a href="#">Order Now</a>
+
+                        <ul class="pricing-box-feature">
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <span>Single-Page Responsive Website (HTML, CSS, JavaScript)</span>
+                            </li>
+
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <span>Basic UI/UX Wireframe Design</span>
+                            </li>
+
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <span>5-Day Delivery</span>
+                            </li>
+                        </ul>
+                     </div>
+
+
+                      <!-- pro plan -->
+                      <div class="plan-box bg-gredient" data-aos="fade-up">
+                        <span class="plan-name">Pro</span>
+                        <span class="price">$300</span>
+                        <a href="#">Order Now</a>
+
+                        <ul class="pricing-box-feature">
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <span>Multi-Page Responsive Website (Up to 3 Pages)</span>
+                            </li>
+
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <span>Custom WordPress Setup with Theme Customization</span>
+                            </li>
+
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <span>Basic SEO Optimization</span>
+                            </li>
+
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <span>7-Day Delivery</span>
+                            </li>
+                        </ul>
+                     </div>
+
+
+                      <!-- premium plan -->
+                      <div class="plan-box bg-gredient" data-aos="fade-up">
+                        <span class="plan-name">Premium</span>
+                        <span class="price">$500</span>
+                        <a href="#">Order Now</a>
+
+                        <ul class="pricing-box-feature">
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <span>Custom WordPress Website (Up to 5 Pages)</span>
+                            </li>
+
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <span>UI/UX Design with Interactive Prototype</span>
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <span>Basic Graphic Design (Social Media Graphics)</span>
+                            </li>
+
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <span>Unlimited Revisions</span>
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <span>10-Day Delivery</span>
+                            </li>
+                        </ul>
+                     </div>
+
+
+
+                      <!-- ultimate plan -->
+                      <div class="plan-box bg-gredient" data-aos="fade-up">
+                        <span class="plan-name">Ultimate</span>
+                        <span class="price">$800</span>
+                        <a href="#">Order Now</a>
+
+                        <ul class="pricing-box-feature">
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <span>Full Website Build (Up to 7 Pages, HTML/JS or WordPress)</span>
+                            </li>
+
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <span>Complete UI/UX Design and Graphic Design (Logo + Branding)</span>
+                            </li>
+
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <span>Complete UI/UX Design with Interactive Prototype</span>
+                            </li>
+
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <span>Advanced SEO Optimization</span>
+                            </li>
+
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <span>Unlimited Revisions</span>
+                            </li>
+
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <span>14-Day Delivery</span>
+                            </li>
+                        </ul>
+                     </div>
+                </div>
+             </section>
+
+
+            
+             <!-- projects -->
+            <section id="projects" class="section-container">
+                 <!-- heading -->
+                 <div class="section-heading">
+                    <span><i class="fa-solid fa-briefcase"></i>Projects</span>
+                    <h3>Explore Portfolio By Technology</h3>
+                </div>
+
+                <!-- filter -->
+                 <ul class="project-list">
+                    <li class="active" data-filter="all">All</li>
+                    <li data-filter="FrontEnd">FrontEnd</li>
+                    <li data-filter="WordPress">WordPress</li>
+                    <li data-filter="ui/ux-design">UI/UX Design</li>
+                    <li data-filter="graphic-design">Graphic Design</li>
+                 </ul>
+
+                <!-- project-container -->
+                <div class="project-container">
+                    <!-- frontend project -->
+                     <a href="#" class="project-box" data-category="FrontEnd" data-aos="fade-up">
+                        <!-- image -->
+                         <div class="project-box-img">
+                            <img src="images/frontendimg1.png" alt="FrontEnd Project">
+                         </div>
+                         <!-- text -->
+                          <div class="project-box-text-container">
+
+                            <!-- detail -->
+                            <div class="project-box-text">
+                                <strong>Connexions Business Website</strong>
+                                <span>FrontEnd</span>
+                            </div>
+
+                            <!-- link-icon -->
+                             <div class="project-box-btn">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                             </div>
+                          </div>
+                     </a>
+
+
+
+
+                     <!-- wordpress project -->
+                     <a href="#" class="project-box" data-category="WordPress" data-aos="fade-up">
+                        <!-- image -->
+                         <div class="project-box-img">
+                            <img src="images/wordpressimg1.png" alt="wordpress Project">
+                         </div>
+                         <!-- text -->
+                          <div class="project-box-text-container">
+
+                            <!-- detail -->
+                            <div class="project-box-text">
+                                <strong>M O Haodha Website</strong>
+                                <span>WordPress</span>
+                            </div>
+
+                            <!-- link-icon -->
+                             <div class="project-box-btn">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                             </div>
+                          </div>
+                     </a>
+
+
+
+                     <!-- uiux project -->
+                     <a href="#" class="project-box" data-category="ui/ux-design" data-aos="fade-up">
+                        <!-- image -->
+                         <div class="project-box-img">
+                            <img src="images/uiuximg2.jpg" alt="UI/UX Design">
+                         </div>
+                         <!-- text -->
+                          <div class="project-box-text-container">
+
+                            <!-- detail -->
+                            <div class="project-box-text">
+                                <strong>Pizza Pippers Landing Page</strong>
+                                <span>UI/UX Design</span>
+                            </div>
+
+                            <!-- link-icon -->
+                             <div class="project-box-btn">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                             </div>
+                          </div>
+                     </a>
+
+
+                      <!-- graphic design project -->
+                    <a href="#" class="project-box" data-category="graphic-design" data-aos="fade-up">
+                        <!-- image -->
+                         <div class="project-box-img">
+                            <img src="images/Logos post 4.png" alt="graphic-design">
+                         </div>
+                         <!-- text -->
+                          <div class="project-box-text-container">
+
+                            <!-- detail -->
+                            <div class="project-box-text">
+                                <strong>Brand Identity Pack</strong>
+                                <span>graphic Design</span>
+                            </div>
+
+                            <!-- link-icon -->
+                             <div class="project-box-btn">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                             </div>
+                          </div>
+                     </a>
+
+
+
+                      <!-- wordpress project -->
+                      <a href="#" class="project-box" data-category="WordPress" data-aos="fade-up">
+                        <!-- image -->
+                         <div class="project-box-img">
+                            <img src="images/wordpressimg3.jpg" alt="wordpress Project">
+                         </div>
+                         <!-- text -->
+                          <div class="project-box-text-container">
+
+                            <!-- detail -->
+                            <div class="project-box-text">
+                                <strong>CodeSmashers Website</strong>
+                                <span>WordPress</span>
+                            </div>
+
+                            <!-- link-icon -->
+                             <div class="project-box-btn">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                             </div>
+                          </div>
+                     </a>
+
+
+
+                     <!-- uiux project -->
+                     <a href="#" class="project-box" data-category="ui/ux-design" data-aos="fade-up">
+                        <!-- image -->
+                         <div class="project-box-img">
+                            <img src="images/uiuximg3.png" alt="ui/ux-design">
+                         </div>
+                         <!-- text -->
+                          <div class="project-box-text-container">
+
+                            <!-- detail -->
+                            <div class="project-box-text">
+                                <strong>Casino Game Design</strong>
+                                <span>UI/UX Design</span>
+                            </div>
+
+                            <!-- link-icon -->
+                             <div class="project-box-btn">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                             </div>
+                          </div>
+                     </a>
+
+
+
+                     <!-- frontend project -->
+                     <a href="#" class="project-box" data-category="FrontEnd" data-aos="fade-up">
+                        <!-- video -->
+                        <div class="project-box-video">
+                          <video autoplay loop muted playsinline>
+                            <source src="images/frontendgame.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                          </video>
+                        </div>
+                        <!-- text -->
+                        <div class="project-box-text-container">
+                          <!-- detail -->
+                          <div class="project-box-text">
+                            <strong>Casino Game Development</strong>
+                            <span>FrontEnd</span>
+                          </div>
+                          <!-- link-icon -->
+                          <div class="project-box-btn">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                          </div>
+                        </div>
+                      </a>
+
+
+                     <!-- ui/ux project -->
+                     <a href="#" class="project-box" data-category="ui/ux-design" data-aos="fade-up">
+                        <!-- video -->
+                        <div class="project-box-video">
+                          <video autoplay loop muted playsinline>
+                            <source src="images/uiuxvideo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                          </video>
+                        </div>
+                        <!-- text -->
+                        <div class="project-box-text-container">
+                          <!-- detail -->
+                          <div class="project-box-text">
+                            <strong>Landing Page Design</strong>
+                            <span>UI/UX Design</span>
+                          </div>
+                          <!-- link-icon -->
+                          <div class="project-box-btn">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                          </div>
+                        </div>
+                      </a>
+
+
+                    <!-- graphic design project -->
+                    <a href="#" class="project-box" data-category="graphic-design" data-aos="fade-up">
+                        <!-- image -->
+                         <div class="project-box-img">
+                            <img src="images/Logos post 2.png" alt="graphic-design">
+                         </div>
+                         <!-- text -->
+                          <div class="project-box-text-container">
+
+                            <!-- detail -->
+                            <div class="project-box-text">
+                                <strong>Logo Collection</strong>
+                                <span>graphic Design</span>
+                            </div>
+
+                            <!-- link-icon -->
+                             <div class="project-box-btn">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                             </div>
+                          </div>
+                     </a>
+
+
+
+                    <!-- uiux project -->
+                    <a href="#" class="project-box" data-category="ui/ux-design" data-aos="fade-up">
+                        <!-- image -->
+                         <div class="project-box-img">
+                            <img src="images/uiuximg1.jpg" alt="ui/ux-design">
+                         </div>
+                         <!-- text -->
+                          <div class="project-box-text-container">
+
+                            <!-- detail -->
+                            <div class="project-box-text">
+                                <strong>E-Pay Application Design</strong>
+                                <span>UI/UX Design</span>
+                            </div>
+
+                            <!-- link-icon -->
+                             <div class="project-box-btn">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                             </div>
+                          </div>
+                     </a>
+                
+
+
+                </div>
+            </section>
+
+
+            <!-- work and education -->
+
+             <section id="edu-work" class="section-container">
+
+        <!-- heading -->
+        <div class="section-heading">
+           <span><i class="fa-regular fa-file-lines"></i>Resume</span>
+           <h3>Work Experience & Education</h3>
+       </div>
+
+
+       <!-- container -->
+
+       <div class="edu-work-container">
+           <!-- education -->
+            <div class="edu-container">
+                <span class="edu-work-label">
+                    <i class="fa-solid fa-building-columns"></i>
+                    Education
+                </span>
+
+                <!-- box-container -->
+                 <div class="edu-work-box-container">
+                    <!-- box -->
+                    <div class="edu-work-box" data-aos="fade-up">
+                        <span class="edu-work-year">2016-2020</span>
+                        <strong>BS in Computer Science</strong>
+                        <span class="edu-work-location">University of Lahore, Pakistan</span>
+                        <p>Earned a BS in Computer Science, gaining a strong foundation in programming, web development, and design for creative projects.</p>
+                    </div>
+
+
+                    <!-- box -->
+                    <div class="edu-work-box" data-aos="fade-up">
+                        <span class="edu-work-year">2016 - 2018</span>
+                        <strong> UI/UX Design Certification</strong>
+                        <span class="edu-work-location"> Coursera</span>
+                        <p> Comprehensive training in Figma, user interface design, and
+                            user experience principles.</p>
+                    </div>
+
+
+                    <!-- box -->
+                    <div class="edu-work-box" data-aos="fade-up">
+                        <span class="edu-work-year">2020-2022</span>
+                        <strong> Advanced Web Development Bootcamp</strong>
+                        <span class="edu-work-location">Udemy</span>
+                        <p>In-depth exploration of modern web technologies, coding and responsive design.</p>
+                    </div>
+                 </div>
+
+                 
+            </div>
+
+            <!-- work container -->
+             <div class="work-container">
+                <span class="edu-work-label">
+                <i class="fa-solid fa-briefcase"></i>
+                Work
+            </span>
+
+             <!-- box-container -->
+             <div class="edu-work-box-container">
+                <!-- box -->
+                <div class="edu-work-box" data-aos="fade-up">
+                    <span class="edu-work-year"> April 2022 - Present</span>
+                    <strong> Modern Web Solutions</strong>
+                    <span class="edu-work-location">Remote Job</span>
+                    <p>Built WordPress sites (portfolios, blogs, e-commerce) with different plugins to enhance functionality.</p>
+                </div>
+
+
+                <!-- box -->
+                <div class="edu-work-box" data-aos="fade-up">
+                    <span class="edu-work-year"> March 2022 - Present</span>
+                    <strong> NextGen Tech Design</strong>
+                    <span class="edu-work-location">Remote (Global Reach)</span>
+                    <p>Built responsive websites with WordPress, HTML, CSS and Javascript for seamless experiences.</p>
+                </div>
+
+
+                <!-- box -->
+                <div class="edu-work-box" data-aos="fade-up">
+                    <span class="edu-work-year">June 2020 - February 2022</span>
+                    <strong>Modern UX Studios</strong>
+                    <span class="edu-work-location">Remote (International Hub)</span>
+                    <p>Designed interactive mockups with Figma, Adobe XD, and Canva for enhancing engagement.</p>
+                </div>
+             </div>
+            </div>
+       </div>
+             </section>
+
+
+
+             <!-- clients -->
+
+             <section id="Testimonials" class="section-container">
+
+                 <!-- heading -->
+        <div class="section-heading" data-aos="fade-up">
+            <span><i class="fa-regular fa-comment-dots"></i>Testimonials</span>
+            <h3>Here's What My Client say</h3>
+        </div>
+
+
+        <!-- container -->
+         <div class="testimonials-container">
+
+
+              <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+
+        <!-- slide -->
+      <div class="swiper-slide">
+
+        <!-- box -->
+        <div class="testimonials-box bg-gredient">
+
+            <!-- reviews -->
+
+            <div class="testimonials-reviews">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+
+            <p>Working with this talented developer was a game-changer for my project! The responsive design and clean code exceeded my expectations.</p>
+
+            <div class="client-profile">
+                <!-- img -->
+
+                <div class="client-profile-img">
+                    <img src="images/review img 1.jpg" alt="clients">
+                </div>
+
+                <!-- text -->
+                 <div class="client-profile-text">
+                    <strong>Ahmed Khan</strong>
+                    <span>FrontEnd client</span>
+                 </div>
+            </div>
+
+        </div>
+      </div> 
+      <!-- slide end -->
+
+
+      <!-- slide -->
+      <div class="swiper-slide">
+
+        <!-- box -->
+        <div class="testimonials-box bg-gredient">
+
+            <!-- reviews -->
+
+            <div class="testimonials-reviews">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+
+            <p>Incredible attention to detail! The branding package transformed my business identity—highly recommend their graphic design skills.</p>
+
+            <div class="client-profile">
+                <!-- img -->
+
+                <div class="client-profile-img">
+                    <img src="images/review img 4.jpg" alt="client">
+                </div>
+
+                <!-- text -->
+                 <div class="client-profile-text">
+                    <strong>Omar Siddiqui</strong>
+                    <span>Graphic Designer</span>
+                 </div>
+            </div>
+
+        </div>
+      </div> 
+      <!-- slide end -->
+
+
+      
+      <!-- slide -->
+      <div class="swiper-slide">
+
+        <!-- box -->
+        <div class="testimonials-box bg-gredient">
+
+            <!-- reviews -->
+
+            <div class="testimonials-reviews">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+
+            <p>The WordPress site was delivered on time with flawless customization. A true professional who understands client needs!</p>
+
+            <div class="client-profile">
+                <!-- img -->
+
+                <div class="client-profile-img">
+                    <img src="images/review img 5.jpg" alt="client">
+                </div>
+
+                <!-- text -->
+                 <div class="client-profile-text">
+                    <strong>Ali Hassan</strong>
+                    <span>WordPress Consultant</span>
+                 </div>
+            </div>
+
+        </div>
+      </div> 
+      <!-- slide end -->
+
+
+           <!-- slide -->
+           <div class="swiper-slide">
+
+            <!-- box -->
+            <div class="testimonials-box bg-gredient">
+    
+                <!-- reviews -->
+    
+                <div class="testimonials-reviews">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+    
+                <p>This website boosted my campaign results! The seamless design and fast delivery made all the difference—great work!</p>
+    
+                <div class="client-profile">
+                    <!-- img -->
+    
+                    <div class="client-profile-img">
+                        <img src="images/review img 2.avif" alt="client">
+                    </div>
+    
+                    <!-- text -->
+                     <div class="client-profile-text">
+                        <strong>Ayesha Ahmed</strong>
+                        <span>Digital Marketer</span>
+                     </div>
+                </div>
+    
+            </div>
+          </div> 
+          <!-- slide end -->
+
+
+          <!-- slide -->
+          <div class="swiper-slide">
+
+            <!-- box -->
+            <div class="testimonials-box bg-gredient">
+    
+                <!-- reviews -->
+    
+                <div class="testimonials-reviews">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+    
+                <p>Exceptional WordPress development! The site launch was smooth, and their communication was top-notch throughout.</p>
+    
+                <div class="client-profile">
+                    <!-- img -->
+    
+                    <div class="client-profile-img">
+                        <img src="images/review img 3.avif" alt="client">
+                    </div>
+    
+                    <!-- text -->
+                     <div class="client-profile-text">
+                        <strong>Sara Khan</strong>
+                        <span>Project Manager</span>
+                     </div>
+                </div>
+    
+            </div>
+          </div> 
+          <!-- slide end -->
+        
+
+
+          <!-- slide -->
+          <div class="swiper-slide">
+
+            <!-- box -->
+            <div class="testimonials-box bg-gredient">
+    
+                <!-- reviews -->
+    
+                <div class="testimonials-reviews">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+    
+                <p>Exceptional WordPress development! The site launch was smooth, and their communication was top-notch throughout.</p>
+    
+                <div class="client-profile">
+                    <!-- img -->
+    
+                    <div class="client-profile-img">
+                        <img src="images/review img 6.jpg" alt="client">
+                    </div>
+    
+                    <!-- text -->
+                     <div class="client-profile-text">
+                        <strong>Zainab Iqbal</strong>
+                        <span>E-commerce Owner</span>
+                     </div>
+                </div>
+    
+            </div>
+          </div> 
+          <!-- slide end -->
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+         </div>
+
+
+        <!-- messsage -->
+         <p class="testimonials-message" data-aos="fade-up">More Than <span>100+ Companies</span> Trusted Us Worldwide</p>
+
+        <!-- client logos -->
+        <div class="client-logos" data-aos="fade-up">
+            <img src="images/logo1.png" alt="logo">
+            <img src="images/logo2.png" alt="logo">
+            <img src="images/logo3.png" alt="logo">
+            <img src="images/logo4.png" alt="logo">
+            <img src="images/logo5.webp" alt="logo">
+        </div>
+
+             </section>
+
+
+
+            <!-- Contact -->
+             <section id="contact" class="section-container">
+                
+                     <!-- heading -->
+        <div class="section-heading">
+            <span><i class="fa-solid fa-paper-plane"></i>Contact</span>
+            <h3>Let's Get In Touch</h3>
+        </div>
+
+
+        <!-- container -->
+
+        <div class="contact-box-container">
+
+            <!-- box -->
+            <div class="contact-box bg-gredient" data-aos="fade-up">
+
+                <!-- icons -->
+                 <div class="contact-box-icon">
+                    <i class="fa-solid fa-address-book"></i>
+                    <strong>Phone</strong>
+                 </div>
+
+                 <!-- detail -->
+                  <span>0346-1535095</span>
+            </div>
+
+
+            <!-- box -->
+            <div class="contact-box bg-gredient" data-aos="fade-up">
+
+                <!-- icons -->
+                 <div class="contact-box-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                    <strong>Address</strong>
+                 </div>
+
+                 <!-- detail -->
+                  <span>abtechdesign06@gmail.com</span>
+            </div>
+
+
+            <!-- box -->
+            <div class="contact-box bg-gredient contact-via-social-media" data-aos="fade-up">
+                 <!-- social -->
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fa-brands fa-github"></i></a>
+                                <a href="#"><svg class="fiverr-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="30" height="30">
+                                    <title>Fiverr</title>
+                                    <path fill= "#E0E0E0" d="M23.004 15.588a.995.995 0 1 0 .002-1.99.995.995 0 0 0-.002 1.99zm-.996-3.705h-.85c-.546 0-.84.41-.84 1.092v2.466h-1.61v-3.558h-.684c-.547 0-.84.41-.84 1.092v2.466h-1.61v-4.874h1.61v.74c.264-.574.626-.74 1.163-.74h1.972v.74c.264-.574.625-.74 1.162-.74h.527v1.316zm-6.786 1.501h-3.359c.088.546.43.858 1.006.858.43 0 .732-.175.83-.487l1.425.4c-.351.848-1.22 1.364-2.255 1.364-1.748 0-2.549-1.355-2.549-2.515 0-1.14.703-2.505 2.45-2.505 1.856 0 2.471 1.384 2.471 2.408 0 .224-.01.37-.02.477zm-1.562-.945c-.04-.42-.342-.81-.889-.81-.508 0-.81.225-.908.81h1.797zM7.508 15.44h1.416l1.767-4.874h-1.62l-.86 2.837-.878-2.837H5.72l1.787 4.874zm-6.6 0H2.51v-3.558h1.524v3.558h1.591v-4.874H2.51v-.302c0-.332.235-.536.606-.536h.918V8.412H2.85c-1.162 0-1.943.712-1.943 1.755v.4H0v1.316h.908v3.558z"/>
+                                  </svg></a>
+            </div>
+
+        </div>
+
+          <!-- message -->
+         <p class="contact-message" data-aos="fade-up">Ready to Bring Your Vision to Life? <span>Contact Me Today!</span></p>
+
+
+             </section>
+
+
+
+
+        </div>
+    </div>
+
+
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+      <!-- AOS code for Animation -->
+       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
