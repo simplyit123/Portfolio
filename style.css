@@ -14,6 +14,26 @@ ul{
 
 
 :root {
+    --Main-color: #1F3C88;              /* Deep Blue for headings & accents */
+    --Secondary-color: #2dd4bf;         /* Teal for highlights and buttons */
+    --Accent-color: #F4B400;            /* Golden Yellow for special highlights */
+    
+    --Text-color: #374151;              /* Dark Grey text for readability */
+    --Heading-color: #1F3C88;           /* Brand Blue for headings */
+    
+    --Background-color: #FFFFFF;        /* White for clean sections */
+    --Body-background-color: #F9FAFB;   /* Very light grey background */
+    --Border-color: #cacaca;            /* Light grey borders */
+    
+    --Gradient-start: #dfdfdf;          /* Gradient light backgrounds */
+    --Gradient-end: #FFFFFF;
+    
+    --Background-gradient-start: #FFFFFF;  
+    --Background-gradient-end: #dfdfdf;
+}
+
+
+/* :root {
     --Main-color: #D4AF37;
     --Secondary-color: #B89729;
     --Text-color: #F6F4F0;
@@ -24,12 +44,30 @@ ul{
     --Gradient-end: #0c0c0c;
     --Background-gradient-start: #2d2f31;
     --Background-gradient-end: #272a2e;  
-}
+} */
+
 
 
 /* light mode color */
 
+
 :root.light-mode{
+    --Main-color: #E8C06A;              /* Golden accent for headings/icons */
+    --Secondary-color: #2dd4bf;         /* Teal for highlights/buttons */
+    --Text-color: #F5F5F5;              /* Light text for readability */
+    
+    --Background-color: #1E1E1E;        /* Dark grey main background */
+    --Body-background-color: #2A2A2A;   /* Slightly lighter dark grey */
+    --Border-color: #3A3A3A;            /* Neutral mid-grey borders */
+    
+    --Gradient-start: #2A2A2A;          /* Gradient from dark grey */
+    --Gradient-end: #1E1E1E;            /* to even darker grey */
+    
+    --Background-gradient-start: #2E2E2E;  
+    --Background-gradient-end: #242424; 
+}
+
+ /* :root.light-mode{
     --Main-color: #E8C06A;      
     --Secondary-color: #D4AF37;   
     --Text-color: #222222;        
@@ -39,12 +77,12 @@ ul{
     --Gradient-start: rgb(255, 255, 255);    
     --Gradient-end: #ececec;     
     --Background-gradient-start: rgba(235, 235, 235); 
-    --Background-gradient-end: #dbdbdb; 
-}
+    --Background-gradient-end: #dbdbdb;  
+} */
 
 
 body{
-    color: var(--text);
+    color: var(--Text-color);
     background-image: linear-gradient(120deg, var(--Background-gradient-start), var(--Background-gradient-end)) !important;
     background-attachment: fixed;
 }
@@ -103,8 +141,8 @@ header ul li a{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--Text-color);
-    background-color: var(--Background-color);
+    color: var(--Secondary-color);
+    background-color: var(--Main-color);
     position: relative;
     transition: all ease 0.2s;
     line-height: 1;
@@ -129,7 +167,7 @@ header ul li a::after{
     transform: translateY(-50%);
     white-space: nowrap;
     background-color: var(--Main-color);
-    color: var(--Background-color);
+    color: var(--Accent-color);
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 14px;
@@ -163,11 +201,6 @@ header nav ul li a:hover::after{
 }
 
 
-header ul li a:hover{
-    color: var(--Main-color);
-}
-
-
 .dark-light-btn{
     height: 65px;
     width: 65px;
@@ -177,7 +210,7 @@ header ul li a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--Text-color);
+    color: var(--Main-color);
     background: linear-gradient(120deg, var(--Gradient-start), var(--Gradient-end)) !important;
     border: none;
     outline: none;
@@ -185,10 +218,13 @@ header ul li a:hover{
     transition: all ease 0.3s;
 }
 
-.dark-light-btn:hover,
+.dark-light-btn:hover{
+    color: var(--Accent-color);
+}
+
 header ul li a:hover,
 header ul li a.active{
-    color: var(--Main-color);
+    color: var(--Accent-color);
 }
 
 
@@ -244,7 +280,7 @@ header ul li a.active{
 }
 
 .user-profile-text h1{
-    color: var(--Text-color);
+    color: var(--Accent-color);
     font-size: 2rem;
     font-weight: 600;
     margin: 5px 0px;
@@ -266,28 +302,28 @@ header ul li a.active{
     justify-content: center;
     align-items: center;
     margin-top: 15px;
-    color: var(--Text-color);
+    color: var(--Main-color);
     transition: all ease 0.3s;
 }
 
 
 .profile-social-container a:hover,
 .user-profile-btns a:hover{
-    color: var(--Main-color);
+    color: var(--Accent-color);
 }
 
 
 .fiverr-icon path {
     transition: fill 0.3s ease;
-    fill: var(--Text-color); 
+    fill: var(--Main-color); 
 }
 
 .light-mode .fiverr-icon path{
-    fill: var(--Text-color);
+    fill: var(--Main-color);
 }
 
 .fiverr-icon:hover path {
-    fill: var(--Main-color); 
+    fill: var(--Accent-color); 
 }
 
 
@@ -303,7 +339,7 @@ header ul li a.active{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--Text-color);
+    color: var(--Main-color);
     letter-spacing: 0.5px;
     font-weight: 500;
     transition: all ease 0.3s;
@@ -336,13 +372,13 @@ header ul li a.active{
 }
 
 #about-us h3{
-    color: var(--Text-color);
+    color: var(--Secondary-color);
     font-weight: 500;
     font-size: 1.4rem;
 }
 
 #about-us h3 span{
-    color: var(--Main-color);
+    color: var(--Accent-color);
 }
 
 #about-us #role{
@@ -356,7 +392,7 @@ header ul li a.active{
 
 
 #about-us h1{
-    color: var(--Text-color);
+    color: var(--Main-color);
     font-size: 3rem;
     font-weight: 500;
     margin: 10px 0px;
@@ -365,7 +401,7 @@ header ul li a.active{
 
 #about-us h1 span{
     background-color: var(--Main-color);
-    color: var(--Background-color);
+    color: var(--Secondary-color);
     padding: 0px 20px;
     border-radius: 30px;
     font-size: 2.6rem;
@@ -395,15 +431,15 @@ header ul li a.active{
 
 
 .project-container-box span{
-    color: var(--Text-color);
+    color: var(--Accent-color);
     font-size: 3.4rem;
     font-weight: 400;
 }
 
 .project-container-box strong{
-    color: var(--Text-color);
+    color: var(--Main-color);
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 500;
     max-width: 100px;
     line-height: 20px;
 }
@@ -415,8 +451,8 @@ header ul li a.active{
 }
 
 .section-heading span{
-    color: var(--Text-color);
-    border: 2px solid var(--Border-color);
+    color: var(--Secondary-color);
+    border: 2px solid var(--Secondary-color);
     padding: 8px 20px ;
     border-radius: 30px;
     font-size: 0.9rem;
@@ -425,7 +461,7 @@ header ul li a.active{
 }
 
 .section-heading h3{
-    color: var(--Text-color);
+    color: var(--Main-color);
     font-size: 2rem;
     font-weight: 500;
     margin-top: 13px;
@@ -459,7 +495,7 @@ header ul li a.active{
 }
 
 .skill-box-content span{
-    color: var(--Text-color);
+    color: var(--Main-color);
     font-weight: 500;
 }
 
@@ -469,7 +505,7 @@ header ul li a.active{
     top: 10px;
     border-radius: 10px;
     border: 1px solid var(--Border-color);
-    color: var(--Text-color);
+    color: var(--Accent-color);
     font-size: 0.8rem;
     font-weight: 500;
     padding: 3px 10px;
@@ -486,7 +522,7 @@ header ul li a.active{
 }
 
 .skill-box-bar span{
-    background-color: var(--Text-color);
+    background-color: var(--Accent-color);
     height: 100%;
     width: 80%;
     position: absolute;
@@ -496,14 +532,14 @@ header ul li a.active{
 }
 
 .service-message{
-    color: var(--Text-color);
+    color: var(--Main-color);
     text-align: center;
     margin: 35px 0px 20px 0px;
 }
 
 
 .service-message a{
-    color: var(--Main-color);
+    color: var(--Accent-color);
     text-decoration: underline;
 }
 
@@ -537,7 +573,7 @@ header ul li a.active{
     height: 100%;
     object-fit: contain;
     object-position: center;
-    color: var(--Main-color);
+    color: var(--Accent-color);
 }
 
 .service-box-icon img{
@@ -554,13 +590,13 @@ header ul li a.active{
 }
 
 .service-box-heading-text span{
-    color: var(--Text-color);
+    color: var(--Main-color);
     opacity: 0.6;
     font-size: 0.8em;
 }
 
 .service-box-heading-text strong{
-    color: var(--Text-color);
+    color: var(--Main-color);
     font-size: 1rem;
     font-weight: 600;
     margin-top: 7px;
@@ -602,7 +638,7 @@ header ul li a.active{
     position: absolute;
     right: 20px;
     top: 20px;
-    background-color: var(--Main-color);
+    background-color: var(--Secondary-color);
     padding: 5px 20px;
     border-radius: 20px;
     text-transform: uppercase;
@@ -614,14 +650,14 @@ header ul li a.active{
 
 .plan-box .price{
     font-size: 2.4rem;
-    color: var(--Main-color);
+    color: var(--Accent-color);
     font-weight: 500;
     margin-top: 10px;
 }
 
 .plan-box a{
-    color: var(--Text-color);
-    border: 1px solid var(--Text-color);
+    color: var(--Main-color);
+    border: 1px solid var(--Main-color);
     padding: 10px 20px;
     border-radius: 30px;
     font-size: 0.9rem;
@@ -634,7 +670,7 @@ header ul li a.active{
 
 .plan-box a:hover{
     color: var(--Background-color);
-    background-color: var(--Text-color);
+    background-color: var(--Main-color);
 }
 
 .pricing-box-feature{
@@ -675,9 +711,9 @@ header ul li a.active{
 }
 
 .project-list li{
-    color: var(--Text-color);
+    color: var(--Main-color);
     background-color: var(--Background-color);
-    border: 1px solid var(--Border-color);
+    border: 1px solid var(--Main-color);
     padding: 8px 20px;
     border-radius: 20px;
     text-transform: uppercase;
@@ -690,7 +726,7 @@ header ul li a.active{
 
 .project-list li.active{
     border: none;
-    background-color: var(--Main-color);
+    background-color: var(--Secondary-color);
     color: var(--Background-color);
 }
 
@@ -764,16 +800,16 @@ header ul li a.active{
 }
 
 .project-box-text strong{
-    color: var(--Text-color);
+    color: var(--Main-color);
     font-size: 1.1rem;
     font-weight: 500;
     margin: 5px 0px;
 }
 
 .project-box-text span{
-    color: var(--Text-color);
+    color: var(--Main-color);
     font-size: 0.7rem;
-    background-color: var(--Background-color);
+    background-color: var(--Accent-color);
     border-radius: 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -783,7 +819,7 @@ header ul li a.active{
 }
 
 .project-box-btn{
-    color: var(--Text-color);
+    color: var(--Main-color);
     width: 50px;
     height: 50px;
     display: flex;
@@ -795,7 +831,7 @@ header ul li a.active{
 
 .project-box:hover .project-box-text span{
     color: var(--Background-color);
-    background-color: var(--Main-color);
+    background-color: var(--Secondary-color);
     border: none;
 }
 
@@ -814,7 +850,7 @@ header ul li a.active{
 }
 
 .edu-work-label{
-    color: var(--Text-color);
+    color: var(--Main-color);
     background-color: var(--Background-color);
     padding: 5px 10px;
     border-radius: 20px;
@@ -872,12 +908,12 @@ header ul li a.active{
 }
 
 .edu-work-box .edu-work-year{
-    color: var(--Main-color);
+    color: var(--Accent-color);
     font-size: 0.9rem;
 }
 
 .edu-work-box strong{
-    color: var(--Text-color);
+    color: var(--Main-color);
     font-size: 1rem;
     font-weight: 500;
     margin-top: 6px;
@@ -885,7 +921,7 @@ header ul li a.active{
 
 .edu-work-location{
     font-size: 0.8rem;
-    color: var(--Text-color);
+    color: var(--Secondary-color);
     opacity: 0.6;
     margin-top: 1px;
 }
@@ -927,7 +963,7 @@ header ul li a.active{
 }
 
 .testimonials-reviews i{
-    color: var(--Main-color);
+    color: var(--Accent-color);
     font-size: 0.8rem;
 }
 
@@ -970,7 +1006,7 @@ header ul li a.active{
 }
 
 .client-profile-text span{
-    color: var(--Text-color);
+    color: var(--Secondary-color);
     opacity: 0.6;
     font-size: 0.8rem;
 }
@@ -981,11 +1017,11 @@ header ul li a.active{
 }
 
 .swiper-pagination-bullet{
-    background-color: var(--Text-color) !important;
+    background-color: var(--Main-color) !important;
 }
 
 .swiper-pagination-bullet-active{
-    background-color: var(--Main-color) !important;
+    background-color: var(--Accent-color) !important;
 }
 
 .swiper-slide{
@@ -1028,12 +1064,12 @@ header ul li a.active{
     object-fit: contain;
     object-position: center;
     transition: filter 0.3s ease;
-    filter: brightness(1);
+    filter: brightness(0.6);
 }
 
 
 .light-mode .client-logos img {
-    filter: brightness(0.3) contrast(1.2);
+    filter: brightness(1) contrast(1.2);
 }
 
 
@@ -1073,7 +1109,7 @@ header ul li a.active{
 }
 
 .contact-box-icon strong{
-    color: var(--Text-color);
+    color: var(--Main-color);
     opacity: 0.8;
     font-weight: 500;
     font-size: 1rem;
@@ -1101,17 +1137,17 @@ header ul li a.active{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--Text-color);
+    color: var(--Main-color);
     transition: all ease 0.3s;
 }
 
 
 .contact-via-social-media a:hover{
-    color: var(--Main-color);
+    color: var(--Accent-color);
 }
 
 .contact-message{
-    color: var(--Text-color);
+    color: var(--Main-color);
     justify-content: center;
     text-align: center;
     margin: 35px 0px 20px 0px;
@@ -1119,8 +1155,9 @@ header ul li a.active{
 
 
 .contact-message span{
-    color: var(--Main-color);
+    color: var(--Accent-color);
 }
+
 
 /* making responsive */
 
