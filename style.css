@@ -1173,7 +1173,7 @@ header ul li a.active{
     }
 
     .user-profile-img{
-        min-height: 400px;
+        min-height: 450px;
     }
 
     nav{
@@ -1477,4 +1477,5 @@ header nav ul li a::before {
         height: 30px; 
     }
 }
+
 
